@@ -1,0 +1,33 @@
+/* Base styles for the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+/* Styles for the underline animation */
+nav ul {
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li .underline {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover .underline {
+  left: 0;
+  width: 100%;
+}
