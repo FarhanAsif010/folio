@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header.js';
 import Portfolio from './portfolio.js';
 import AboutMe from './components/AboutMe.js';
 import Projects from './components/Projects.js';
+import ProjectDetail from './components/ProjectDetail.js';
 import Contact from './components/Contact.js';
 
 function App() {
@@ -31,21 +33,33 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header scrollToSection={scrollToSection} />
-      <div ref={homeRef}>
-        <Portfolio />
+    <Router>
+      <div className="App">
+        <Header scrollToSection={scrollToSection} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div ref={homeRef}>
+                  <Portfolio />
+                </div>
+                <div ref={aboutMeRef}>
+                  <AboutMe />
+                </div>
+                <div ref={projectsRef}>
+                  <Projects />
+                </div>
+                <div ref={contactRef}>
+                  <Contact />
+                </div>
+              </>
+            }
+          />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
       </div>
-      <div ref={aboutMeRef}>
-        <AboutMe />
-      </div>
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
-      </div>
-    </div>
+    </Router>
   );
 }
 

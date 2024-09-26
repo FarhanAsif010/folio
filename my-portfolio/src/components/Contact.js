@@ -23,13 +23,16 @@ const Contact = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-black to-purple-800 text-white py-24">
-      <section className="contact transition duration-300 ease-in-out hover:scale-105">
+      <section className="contact transition duration-300 ease-in-out hover:scale-105 relative">
         <motion.div
-          className="text-center max-w-2xl p-8 rounded-lg bg-gradient-to-r from-black to-purple-800"
+          className="text-center max-w-2xl p-8 rounded-lg bg-gradient-to-r from-black to-purple-800 relative overflow-hidden"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          {/* Glowing left border */}
+          <div className="absolute left-0 top-0 bottom-0 w-1 bg-purple-500 shadow-[0_0_15px_5px_rgba(168,85,247,0.5)]"></div>
+
           <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
           <div className="space-y-6">
             {contactItems.map((item, index) => (
