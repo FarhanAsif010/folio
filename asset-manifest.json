@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/folio/static/css/main.2a879926.css",
+    "main.js": "/folio/static/js/main.b22ee15a.js",
+    "static/media/movieLand.png": "/folio/static/media/movieLand.62f95a04943a52218099.png",
+    "static/media/movieBat.png": "/folio/static/media/movieBat.87ddb93af3e9aacaf342.png",
+    "static/media/chal.png": "/folio/static/media/chal.6930c9fe77deb917795e.png",
+    "static/media/hotelRes.png": "/folio/static/media/hotelRes.b512c553cdc037c53510.png",
+    "static/media/hotelFooter.png": "/folio/static/media/hotelFooter.9c1948778fd5fcb0afcb.png",
+    "static/media/realEstateHome.png": "/folio/static/media/realEstateHome.1ed00c8942735d10da0c.png",
+    "static/media/realEstateProfile.png": "/folio/static/media/realEstateProfile.c002798d448eac0f9285.png",
+    "index.html": "/folio/index.html",
+    "main.2a879926.css.map": "/folio/static/css/main.2a879926.css.map",
+    "main.b22ee15a.js.map": "/folio/static/js/main.b22ee15a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a879926.css",
+    "static/js/main.b22ee15a.js"
+  ]
+}
