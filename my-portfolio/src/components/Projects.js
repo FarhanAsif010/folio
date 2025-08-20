@@ -22,7 +22,8 @@ const projects = [
     id: 3,
     title: 'Movie Finder',
     image: movieLand,
-    description: 'Description for project 3',
+    description:
+      'A Simple Movie Finder App that used API to fetch movies and display them in a list.',
   },
 ];
 
